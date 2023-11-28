@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stella's Lesson 7</title>
+    <body>
+        <header role="banner">
+            <h1 id="page-name">Page Name</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#skip-home" role="link">Skip to Home</a></li>
+                    <li><a href="#skip-content" role="link">Skip to Content</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="skip-home" aria-labelledby="skip-home">
+                <h2>Home</h2>
+                <!-- Your home content goes here -->
+                <p>This is the home section of your page.</p>
+            </section>
+    
+            <section id="skip-content" aria-labelledby="skip-content">
+                <h2>Form</h2>
+                <form role="form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required aria-required="true">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <br>
+                    <input type="submit" value="Submit" role="button">
+                </form>
+            </section>
+        </main>
+    
+        <footer role="contentinfo">
+            &copy; 2023 Your Company Name
+        </footer>
+    </body>
+    </html>
+
+
+    
+    
+
+    <footer>
+        &copy; 2023 Your Website. All rights reserved.
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+Directions:
+
+Create a semantic page layout with only with HTML no styling.
+Within the header, create a navigation list with one or two "skip navigation links.
+In the main content, create a form with username and email text inputs and a submit button.
+Create a footer with the copyright date.
+Make sure that all elements that need proper WGAG compliant AIRA and ROLES and can be navigated by keyboard and screen reader.
+Upload a zip file with your work. 
+Thanks and have fun

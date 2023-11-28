@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body class="body">
+
+    <!-- Laptop Header -->
+    <header class="layout-grid grid-laptop">
+        <div id="title-1" class="big-title-1 col">STELLA</div>
+        <div id="title-2" class="big-title-2 col">DREAMS</div>
+        <div id="title-3" class="big-title-3 col">UNRAVELS</div>
+        <div id="title-4" class="big-title-4 col">AND</div>
+        <div id="title-5" class="big-title-5 col">WANDERS</div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header class="layout-grid grid-mobile">
+        <div id="title-1" class="big-title-1 col">STELLA</div>
+        <div id="title-2" class="big-title-2 col">DREAMS</div>
+        <div id="title-3" class="big-title-3 col">UNRAVELS</div>
+        <div id="title-4" class="big-title-4 col">AND</div>
+        <div id="title-5" class="big-title-5 col">WANDERS</div>
+    </header>
+
+    <!-- Laptop Navigation -->
+    <div class="menu-laptop-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="font-size: 18px; padding: 5px; "collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="language.html">LANGUAGE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="menu-mobile-section">
+        <div class="menu-bar" onclick="toggleMenu()" id="menuButton">MENU</div>
+        <nav class="nav-mobile" id="mobile-menu">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="about.html" class="nav-link">ABOUT ME</a>
+            <a href="blog.html" class="nav-link">BLOG</a>
+            <a href="contact.html" class="nav-link">CONTACT ME</a>
+            <a href="language.html" class="nav-link">LANGUAGE</a>
+        </nav>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>I am Stella!</h1>
+                <h2>I finally learned that it's never too late to <br>learn something new!</h2>
+                <!-- Your additional content goes here -->
+            </div>
+            <div class="col-lg-4">
+                <img src="images/imageone.jpg" class="img-fluid" alt="Stella's self-portrait photo"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center">
+        &copy; 2023 Stella Website. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Your Custom JS -->
+    <script src="js/index.js"></script>
+</body>
+</html>

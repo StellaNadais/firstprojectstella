@@ -1,0 +1,295 @@
+@media screen and (min-width: 868px) {
+    
+    .body {
+        width: fit-content;
+        color: #191919;
+        font-family: proxima-nova-condensed, sans-serif;
+        font-size: 40px;
+        line-height: 0px;
+        margin: 0px;
+        height: 100%;
+    }
+
+    .grid-laptop {
+        grid-column-gap: 40px;
+        grid-row-gap: 3px;
+        margin-top: 25px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        margin-left: 13px;
+        grid-template-rows: auto auto auto auto auto;
+        display: grid;
+        font-family: proxima-nova-condensed, sans-serif;
+        font-weight: bold;
+    }
+
+    .grid-mobile,
+    .menu-bar,
+    .nav-mobile,
+    .nav-mobile a{
+        display:none;
+    }
+
+    .title-box {
+        z-index: 5;
+        width: 100vw;
+        padding-left: 15px;
+        padding-right: 22px;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: inherit;
+        justify-content: space-around;
+    }
+
+    .big-title-1,
+    .big-title-2,
+    .big-title-3,
+    .big-title-4,
+    .big-title-5 {
+        font-size: 60px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0;
+        grid-column: span 1;
+    }
+        
+    .nav-button {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 8px 0;
+        font-size: 15px;
+    }
+
+    .nav-link{
+        font-size: 1;
+        color: #333;
+        text-decoration: none;
+        margin-top: 5px;
+        position: relative;
+    }
+   
+    .nav-link:nth-child(1) { margin-left: 180px;}
+    .nav-link:nth-child(2) { margin-left: 300px;}
+    .nav-link:nth-child(3) { margin-left: 30px;}
+    .nav-link:nth-child(4) { margin-left: 45px;}
+    .nav-link:nth-child(5) { margin-left: 134px;}
+   
+    .nav-link:hover {
+        font-style: italic;
+    }        
+
+    .content-container {
+        grid-area: article;
+        display: grid;
+        grid-column: span 2;
+        grid-gap: 20px;
+        grid-template-columns: auto;
+        grid-template-areas:
+            ". article main ."
+            ". article aside .";
+    }
+
+    .article {
+        position: static;
+        margin-top: 248px;
+        padding: 20px;
+        grid-area: article;
+        display: grid;
+        grid-column: span 2;
+        order: 1;
+    }
+
+    .image {
+
+        max-width: 100%;
+        margin-top: 280px;
+    }
+
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-column: span 1;
+        order: 2;
+        line-height: 1;
+        margin-top: 258px;
+        margin-left:150px;
+    }
+
+    .aside {
+        position: static;
+        display: grid;
+        grid-area: aside;
+        span: 1;
+        order: 3;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-family: proxima-nova-condensed, sans-serif;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .body {
+        width: 100%;
+        color: #191919;
+        font-family: proxima-nova-condensed, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+        height: 100%;
+    }
+
+    .grid-mobile {
+        grid-column-gap: 30px;
+        grid-row-gap: 1px;
+        margin-top: 13px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        margin-left: 9px;
+        grid-template-rows: auto auto auto auto auto;
+        display: grid;
+        font-family: proxima-nova-condensed, sans-serif;
+        font-weight: bold;
+    }
+    .grid-laptop{
+        display:none;
+    }
+    .title-box {
+        z-index: 5;
+        width: 100vw;
+        padding-left: 15px;
+        padding-right: 22px;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: inherit;
+        justify-content: space-around;
+    }
+
+    .big-title-1,
+    .big-title-2,
+    .big-title-3,
+    .big-title-4,
+    .big-title-5 {
+        font-size: 35px;
+        line-height: 24px;
+        text-align: center;
+        grid-column: span 1;
+    }
+
+    .menu-laptop-section{
+        display: none;
+    }
+
+    .menu-bar {
+        cursor: pointer;
+        padding: 13px;
+        background-color: transparent;
+        color: #333;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        width: 94%;
+        z-index: 3;
+    }
+
+    .nav-mobile {
+        background-color: #000;
+        padding: 13px;
+        text-align: right;
+        position: fixed;
+        margin: 24px auto;
+        right: 0;
+        top: 54px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-mobile a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 0;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .nav-mobile a:hover {
+        background-color: #444;
+    }
+
+    .nav-link {
+        text-align: center;
+        font-family: proxima-nova-condensed, sans-serif;
+        padding-left: 10px;
+    }
+
+    .content-container {
+        grid-area: article;
+        display: grid;
+        grid-column: span 2;
+        grid-gap: 20px;
+        grid-template-columns: auto;
+        grid-template-areas:
+            ". article main ."
+            ". article aside .";
+    }
+
+    .article {
+        position: static;
+        margin-top: 248px;
+        padding: 20px;
+        grid-area: article;
+        display: grid;
+        grid-column: span 2;
+        order: 1;
+    }
+
+    .image {
+        grid-area: aside;
+        display: grid;
+        grid-column: span 2;
+        height: auto;
+        max-height: 173px;
+        max-width: 100%;
+        margin-top: 280px;
+    }
+
+    .main{
+        grid-area: main;
+        align-items: center;
+        display: grid;
+        grid-column: span 2;
+        order: 2;
+        margin: 318px auto;
+    }
+
+    .aside {
+        position: static;
+        display: grid;
+        grid-area: aside;
+        order: 3;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-family: proxima-nova-condensed, sans-serif;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+}
+

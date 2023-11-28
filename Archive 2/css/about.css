@@ -1,0 +1,117 @@
+.body{
+    margin: 0;
+    padding:0;
+}
+
+.layout-grid grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+.title-box{
+    z-index: 5;
+    width: 100vw;
+    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 22px;
+    display: block;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    overflow: visible;
+    justify-content: space-around;
+}
+
+.big-title-1{
+    grid-area: header;
+    display: inline;
+    justify-content: space-around;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: overline;
+    padding: 10px;
+    color: #191919;
+    margin-left: -2px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.big-title-2{
+    grid-area: header;
+    display: inline;
+    justify-content: space-around;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: overline;
+    padding: 10px;
+    color: #191919;
+    margin-left: 40px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.big-title-3{
+    grid-area: header;
+    display: inline;
+    grid-area: header;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: overline;
+    padding: 10px;
+    color: #191919;
+    margin-left: 40px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.big-title-4{
+    grid-area: header;
+    display: inline;
+    grid-area: header;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: overline;
+    padding: 10px;
+    color: #191919;
+    margin-left: 40px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.big-title-5{
+    grid-area: header;
+    display: inline;
+    grid-area: header;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: overline;
+    padding: 10px;
+    color: #191919;
+    margin-left: 40px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.nav-link {
+    text-align: center;
+    background-color: #eac3e4;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: overline;
+    padding: 10px;
+}
