@@ -1,0 +1,43 @@
+:root {
+	--header-height: 10vw;
+}
+.header {
+	padding: 1rem;
+}
+.header-nav {
+	text-transform: uppercase;
+}
+.header-title {
+	font-weight: 900;
+	font-size: clamp(1.5rem, 4vw, 8rem);
+}
+.header-title-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (min-width: 769px) {
+	.header {
+		height: var(--header-height);
+	}
+	.header-nav {
+		display: flex;
+		justify-content: space-between;
+		gap: 2em;
+		/*grid-template-columns: repeat(5, 1fr);*/
+	}
+
+	.header-nav > *:last-child {
+		grid-column: 5;
+	}
+	.header-title-wrap {
+		display: block;
+		width: max-content;
+	}
+	.header-link {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+}

@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+
+.body {
+	color: #191919;
+	font-family: proxima-nova-condensed, sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+	line-height: 1.5;
+}
+footer {
+	margin-top: auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+main {
+	padding: 1rem;
+	max-width: 60rem;
+	align-self: center;
+}
+
+a {
+	color: #5c6bc0;
+	text-decoration-color: #c5cae9;
+}
+a:hover {
+	text-decoration-color: currentColor;
+}
